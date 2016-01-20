@@ -117,7 +117,7 @@
 			flex-direction:row;
 			justify-content:center;
 		}
-		section.hot_shop > article > div,section.hot_store > article > div:first-child {
+		section.hot_shop > article > div{
 			width:20%;
 			margin-left:2%;
 
@@ -129,8 +129,8 @@
 			height: 100%;
 		}
 		section.hot_shop > article > ul{
-			padding-top:2px;
-			padding-bottom: 2.5px;
+			padding-top:2%;
+			padding-bottom: 2%;
 			margin-left: 2%;
 			width:56%;
 		}
@@ -158,9 +158,47 @@
 			width:auto;
 		}
 		/********************************热门商品***********************************/
+		section.hot_store > article{
+			flex-wrap:wrap;
+		}
+		section.hot_store > article > div{
+			width:21%;
+			margin-left: 5px;
+			margin-right: 5px;
+			margin-bottom: 5px;
+			/*border: 1px solid blue;*/
+		}
+		section.hot_store > article > div > img
+		 {
+			display: block;
+			max-width: 100%;
+			width: 100%;
+			height: 100%;
+		}
+		section.hot_store > article > div > img ~ p:last-child{
+			color:#fc485a;
+			text-align: center;
+			/*用了伪类选择器后无法继续使用子选择器*/
+		}
+
+		section.hot_store p > span:first-child{
+			font-size: 16px;
+			padding-right:5%;
+		}
+		section.hot_store p > span:last-child{
+			font-size: 12px;
+			text-decoration: line-through;
+		}
+		section.hot_store{
+			margin-bottom: 300px;
+		}
 		/********************************footer***********************************/
 		footer{
-			height:96px;
+			height:50px;
+			width: 100%;
+			position: fixed;
+			top:93%;
+			background-color: white;
 		}
 		/************************其他复用的class样式********************************/
 		div.divider{
@@ -238,14 +276,142 @@
 				<img src = "img/nav_icon_zeng.jpg" />
 			</div>
 		</article>
-	</section>
-	<section class = "hot_store">
-		<nav>热门商品</nav>
-		<div class = "divider"></div>
 		<article>
-			<>
+			<div>
+				<img src = "img/shop_luhua.jpg" />
+			</div>
+			<ul>
+				<li>盛洲牌系列食用油</li>
+				<li>
+					<img src = "img/icon_star.jpg" />
+					<img src = "img/icon_star.jpg" />
+					<img src = "img/icon_star.jpg" />
+					<img src = "img/icon_star.jpg" />
+					<img src = "img/icon_star.jpg" />
+				</li>
+				<li>满xx减xx满xx减xx满xx减xx满xx减xx满xx减xx满xx减xx满xx减xx满xx减xx满xx减xx满xx减xx满xx减xx满xx减xx</li>
+			</ul>
+			<div>
+				<img src = "img/nav_icon_jian.jpg" />
+				<img src = "img/nav_icon_man.jpg" />
+				<img src = "img/nav_icon_shou.jpg" />
+				<img src = "img/nav_icon_zeng.jpg" />
+			</div>
+		</article>
+		<article>
+			<div>
+				<img src = "img/shop_luhua.jpg" />
+			</div>
+			<ul>
+				<li>盛洲牌系列食用油</li>
+				<li>
+					<img src = "img/icon_star.jpg" />
+					<img src = "img/icon_star.jpg" />
+					<img src = "img/icon_star.jpg" />
+					<img src = "img/icon_star.jpg" />
+					<img src = "img/icon_star.jpg" />
+				</li>
+				<li>满xx减xx满xx减xx满xx减xx满xx减xx满xx减xx满xx减xx满xx减xx满xx减xx满xx减xx满xx减xx满xx减xx满xx减xx</li>
+			</ul>
+			<div>
+				<img src = "img/nav_icon_jian.jpg" />
+				<img src = "img/nav_icon_man.jpg" />
+				<img src = "img/nav_icon_shou.jpg" />
+				<img src = "img/nav_icon_zeng.jpg" />
+			</div>
+		</article>
+		<article>
+			<div>
+				<img src = "img/shop_luhua.jpg" />
+			</div>
+			<ul>
+				<li>盛洲牌系列食用油</li>
+				<li>
+					<img src = "img/icon_star.jpg" />
+					<img src = "img/icon_star.jpg" />
+					<img src = "img/icon_star.jpg" />
+					<img src = "img/icon_star.jpg" />
+					<img src = "img/icon_star.jpg" />
+				</li>
+				<li>满xx减xx满xx减xx满xx减xx满xx减xx满xx减xx满xx减xx满xx减xx满xx减xx满xx减xx满xx减xx满xx减xx满xx减xx</li>
+			</ul>
+			<div>
+				<img src = "img/nav_icon_jian.jpg" />
+				<img src = "img/nav_icon_man.jpg" />
+				<img src = "img/nav_icon_shou.jpg" />
+				<img src = "img/nav_icon_zeng.jpg" />
+			</div>
 		</article>
 	</section>
-	<footer>footer</footer>
+	<section class = "hot_store">
+		<nav>
+			<span class = "title">热门商品</span>
+			<span class = "gengduo">更多>></span>
+		</nav>
+		<div class = "divider"></div>
+		<article>
+			<div>
+				<img src = "img/shangpin_1.jpg" />
+				<p></p>
+				<p><span>￥26</span><span>￥48</span></p>
+			</div>
+			<div>
+				<img src = "img/shangpin_1.jpg" />
+				<p></p>
+				<p><span>￥26</span><span>￥48</span></p>
+			</div>
+			<div>
+				<img src = "img/shangpin_1.jpg" />
+				<p></p>
+				<p><span>￥26</span><span>￥48</span></p>
+			</div>
+			<div>
+				<img src = "img/shangpin_1.jpg" />
+				<p></p>
+				<p><span>￥26</span><span>￥48</span></p>
+			</div>
+			<div>
+				<img src = "img/shangpin_1.jpg" />
+				<p></p>
+				<p><span>￥26</span><span>￥48</span></p>
+			</div>
+			<div>
+				<img src = "img/shangpin_1.jpg" />
+				<p></p>
+				<p><span>￥26</span><span>￥48</span></p>
+			</div>
+			<div>
+				<img src = "img/shangpin_1.jpg" />
+				<p></p>
+				<p><span>￥26</span><span>￥48</span></p>
+			</div>
+			<div>
+				<img src = "img/shangpin_1.jpg" />
+				<p></p>
+				<p><span>￥26</span><span>￥48</span></p>
+			</div>
+			<div>
+				<img src = "img/shangpin_1.jpg" />
+				<p></p>
+				<p><span>￥26</span><span>￥48</span></p>
+			</div>
+			<div>
+				<img src = "img/shangpin_1.jpg" />
+				<p></p>
+				<p><span>￥26</span><span>￥48</span></p>
+			</div>
+			<div>
+				<img src = "img/shangpin_1.jpg" />
+				<p></p>
+				<p><span>￥26</span><span>￥48</span></p>
+			</div>
+			<div>
+				<img src = "img/shangpin_1.jpg" />
+				<p></p>
+				<p><span>￥26</span><span>￥48</span></p>
+			</div>
+		</article>
+	</section>
+	<footer>底部导航</footer>
 </body>
 </html>
